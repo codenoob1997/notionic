@@ -19,8 +19,8 @@ const BLOG = {
     notes: false,
     projects: true,
     contact: false,
-    books: true,
-    friends: true,
+    books: false,
+    friends: false,
   },
   layoutShow:{
     footer:false,
