@@ -1,4 +1,4 @@
-import BLOG from '@/blog.config'
+import BLOG, { layoutShow } from '@/blog.config'
 import formatDate from '@/lib/formatDate'
 // import Image from 'next/image'
 import Link from 'next/link'
@@ -189,10 +189,10 @@ const Layout = ({ children, blockMap, frontMatter, fullWidth = false, subPage = 
             </div>
           )}
         </article>
-        <Aside subPageTitle={subPageTitle} frontMatter={frontMatter} />
+        <Aside subPageTitle={subPageTitle} frontMatter={frontMatter} show={BLOG.layoutShow.aside} />
       </motion.div>
 
-      <PostFooter />
+      <PostFooter show={BLOG.layoutShow.footer}/>
       <Comments frontMatter={frontMatter} />
     </Container>
   );
