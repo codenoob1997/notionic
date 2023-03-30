@@ -177,13 +177,11 @@ const Header = ({ navBarTitle, fullWidth }) => {
           <Link passHref href='/' scroll={false}>
             <a aria-label={BLOG.title}>
               <motion.div className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='24'
-                  height='24'
-                  viewBox='0 0 100 100'
-                >
-<g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)"
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="48.000000pt" height="48.000000pt" viewBox="0 0 48.000000 48.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,48.000000) scale(0.200000,-0.200000)"
 fill="#000000" stroke="none">
 <path d="M133 358 c-35 -25 -48 -51 -57 -115 -5 -37 -3 -44 18 -59 20 -12 23
 -19 15 -33 -16 -24 47 -145 78 -149 22 -3 21 -2 -9 58 -16 34 -28 63 -26 65
@@ -201,6 +199,7 @@ fill="#000000" stroke="none">
 <path d="M398 323 c-2 -5 -1 -33 3 -63 l6 -55 1 63 c2 57 -1 74 -10 55z"/>
 </g>
 </svg>
+
               </motion.div>
             </a>
           </Link>
