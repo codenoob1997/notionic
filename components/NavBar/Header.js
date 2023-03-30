@@ -11,7 +11,8 @@ import {
   CollectionIcon,
   SparklesIcon,
   SearchIcon,
-  MenuIcon
+  MenuIcon,
+  VideoCameraIcon
 } from '@heroicons/react/outline'
 import Social from '../Common/Social.js'
 import ThemeSwitcher from './ThemeSwitcher.js'
@@ -62,11 +63,18 @@ const NavBar = () => {
     },
     {
       id: 4,
+      name:t.NAV.VIDEOS,
+      to: '/videos',
+      icon: <VideoCameraIcon className='inline-block mb-1 h-5 w-5' />,
+      show: true,
+    },
+    {
+      id: 5,
       name: t.NAV.SEARCH,
       to: '/search',
       icon: <SearchIcon className='inline-block mb-1 h-5 w-5' />,
       show: true
-    }
+    },
   ]
   return (
     <motion.div className='flex'>
