@@ -21,6 +21,9 @@ const BLOG = {
     contact: false,
     books: false,
     friends: false,
+    videos:true,
+    markdowns:true,
+    search:true,
   },
   layoutShow:{
     footer:false,

@@ -1,15 +1,15 @@
 import Container from '@/components/Container'
 import BlogPost from '@/components/BlogPost'
-import VideosHero from '@/components/Hero/Videos'
+// We use newsletterHero for markdownHero
+import MarkdownsHero from '@/components/Hero/Markdowns'
 import { getAllPosts, getPostBlocks } from '@/lib/notion'
 import BLOG from '@/blog.config'
-import VideosAvatar from '@/components/Hero/VideosAvatar'
 
 export async function getStaticProps() {
   const posts = await getAllPosts({ onlyNewsletter: true })
 
   const heros = await getAllPosts({ onlyHidden: true })
-  const hero = heros.find((t) => t.slug === 'videos')
+  const hero = heros.find((t) => t.slug === 'markdowns')
 
   let blockMap
   try {
@@ -28,10 +28,10 @@ export async function getStaticProps() {
   }
 }
 
-const videos = ({ posts, blockMap }) => {
+const markdowns = ({ posts, blockMap }) => {
   return (
-    <Container title={BLOG.videos} description={BLOG.description}>
-      <VideosHero blockMap={blockMap} />
+    <Container title={BLOG.markdown} description={BLOG.description}>
+      <MarkdownsHero blockMap={blockMap} />
       {posts.map((post) => (
         <BlogPost key={post.id} post={post} />
       ))}
@@ -39,4 +39,4 @@ const videos = ({ posts, blockMap }) => {
   )
 }
 
-export default videos
+export default markdowns

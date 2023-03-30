@@ -12,7 +12,8 @@ import {
   SparklesIcon,
   SearchIcon,
   MenuIcon,
-  VideoCameraIcon
+  VideoCameraIcon,
+  BookOpenIcon
 } from '@heroicons/react/outline'
 import Social from '../Common/Social.js'
 import ThemeSwitcher from './ThemeSwitcher.js'
@@ -42,10 +43,10 @@ const NavBar = () => {
     },
     {
       id: 1,
-      name: t.NAV.NEWSLETTER,
-      to: '/newsletter',
-      icon: <NewspaperIcon className='inline-block mb-1 h-5 w-5' />,
-      show: BLOG.pagesShow.newsletter
+      name: t.NAV.MARKDOWNS,
+      to: '/markdowns',
+      icon: <BookOpenIcon className='inline-block mb-1 h-5 w-5' />,
+      show: BLOG.pagesShow.markdowns
     },
     {
       id: 2,
@@ -56,24 +57,24 @@ const NavBar = () => {
     },
     {
       id: 3,
+      name:t.NAV.VIDEOS,
+      to: '/videos',
+      icon: <VideoCameraIcon className='inline-block mb-1 h-5 w-5' />,
+      show: BLOG.pagesShow.videos,
+    },
+    {
+      id: 4,
       name: t.NAV.PROJECTS,
       to: '/projects',
       icon: <SparklesIcon className='inline-block mb-1 h-5 w-5' />,
       show: BLOG.pagesShow.projects
     },
     {
-      id: 4,
-      name:t.NAV.VIDEOS,
-      to: '/videos',
-      icon: <VideoCameraIcon className='inline-block mb-1 h-5 w-5' />,
-      show: true,
-    },
-    {
       id: 5,
       name: t.NAV.SEARCH,
       to: '/search',
       icon: <SearchIcon className='inline-block mb-1 h-5 w-5' />,
-      show: true
+      show: BLOG.pagesShow.search
     },
   ]
   return (
