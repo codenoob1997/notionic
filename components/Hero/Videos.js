@@ -4,9 +4,11 @@ import Social from '../Common/Social.js'
 import { useState } from 'react'
 import { lang } from '@/lib/lang'
 import { useRouter } from 'next/router'
-import { VideoCameraIcon, ClipboardCheckIcon, CameraIcon } from '@heroicons/react/outline'
+import {  ClipboardCheckIcon} from '@heroicons/react/outline'
 import dynamic from 'next/dynamic'
+import VideosAvatar from './VideosAvatar'
 import { NotionRenderer } from 'react-notion-x'
+
 
 const Collection = dynamic(() =>
   import('react-notion-x/build/third-party/collection').then((m) => m.Collection), { ssr: true }
@@ -35,8 +37,9 @@ const VideosHero = ({ blockMap }) => {
         />
         <Social />
       </div>
-      <div className='w-1/5'>
-        <CameraIcon className='object-cover object-center text-gray-500 dark:text-gray-300' />
+      <div className='w-2/5'>
+        {/* <CameraIcon className='object-cover object-center text-gray-500 dark:text-gray-300' />  */}
+        <VideosAvatar className='text-gray-600 dark:text-gray-300' /> 
       </div>
     </div>
   </>;

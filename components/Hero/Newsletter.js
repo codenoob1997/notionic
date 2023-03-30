@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 import { NewspaperIcon, ClipboardCheckIcon } from '@heroicons/react/outline'
 import dynamic from 'next/dynamic'
 import { NotionRenderer } from 'react-notion-x'
-
+import NewsletterAvatar from './NewsletterAvatar.js'
 const Collection = dynamic(() =>
   import('react-notion-x/build/third-party/collection').then((m) => m.Collection), { ssr: true }
 )
@@ -95,8 +95,9 @@ const NewsletterHero = ({ blockMap }) => {
           )}
         </div> */}
       </div>
-      <div className='w-1/5'>
-        <NewspaperIcon className='object-cover object-center text-gray-500 dark:text-gray-300' />
+      <div className='w-2/5'>
+        {/* <NewspaperIcon className='object-cover object-center text-gray-500 dark:text-gray-300' /> */}
+        <NewsletterAvatar className='text-gray-600 dark:text-gray-300'/>
       </div>
     </div>
   </>;
