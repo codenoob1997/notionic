@@ -4,7 +4,7 @@ const BLOG = {
   email: '1013121231@qq.com',
   link: 'https://twitter.com/0xthomaslok',
   newsletter: 'Notionic Weekly',
-  description: 'A static blog build on top of Notion and Next.js',
+  description: 'Peace, inner peace.',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
