@@ -34,11 +34,11 @@ const NewsletterHero = ({ blockMap }) => {
           components={{ Collection }}
         />
         <Social />
-        <h2 className='text-xl pt-8 pb-4 font-light text-gray-500 dark:text-day'>
+        {/* <h2 className='text-xl pt-8 pb-4 font-light text-gray-500 dark:text-day'>
           {t.HERO.NEWSLETTER.SUBSCRIPTION_HEAD}
-        </h2>
+        </h2> */}
 
-        <div className='flex flex-col sm:flex-row sm:justify-center gap-4'>
+        {/* <div className='flex flex-col sm:flex-row sm:justify-center gap-4'>
           <Link passHref href={BLOG.telegramChannelUrl} scroll={false} legacyBehavior>
             <button className='bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 inline-flex py-3 px-5 rounded-lg items-center'>
               <svg
@@ -93,7 +93,7 @@ const NewsletterHero = ({ blockMap }) => {
               </span>
             </button>
           )}
-        </div>
+        </div> */}
       </div>
       <div className='w-1/5'>
         <NewspaperIcon className='object-cover object-center text-gray-500 dark:text-gray-300' />
