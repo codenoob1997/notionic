@@ -10,7 +10,6 @@ export async function getStaticProps() {
 
   const heros = await getAllPosts({ onlyHidden: true })
   const hero = heros.find((t) => t.slug === 'videos')
-
   let blockMap
   try {
     blockMap = await getPostBlocks(hero.id)
